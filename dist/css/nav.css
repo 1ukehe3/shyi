@@ -1,0 +1,229 @@
+#header {
+    width: 100%;
+    background-color: #333;
+    height: 25px;
+    position:fixed;
+   top: 0;
+    left:0;
+   z-index: 1;
+    
+  }
+
+  #header{
+    z-index: 0;
+  }
+#header ul   {
+  display: flex;
+ justify-content: flex-end;
+ align-items:center;
+ margin-top: 3px;
+}
+#header ul li{
+  display:flex;
+margin: 0px;
+color:#fff;
+
+
+}
+#header ul li span{
+ 
+  font-size: 0.5rem;
+  margin: 0 5px;
+
+}
+#header ul li p{
+ 
+  font-weight: 300;
+  
+  font-size: 0.58rem;
+ margin-top: 0.05rem;
+ margin-right: 40px;
+}
+#navbarSupportedContent{
+
+    position:fixed;
+ 
+    width:100%;
+   min-height: 80px;
+  top: 25px;
+  display: flex;
+  flex-direction: row;
+
+  }
+  @media (max-width: 1000px) {
+    #navbarSupportedContent{
+    display:none ;
+    }
+    #yingyang{
+      display:none ;
+      }
+  }
+  #fixnav  {
+    
+  list-style: none;
+    display: flex;
+    flex-direction: row;
+ margin-left: 205px;
+  height: 60px;
+
+  
+    padding-top: 40px;
+   margin-bottom:0px;
+   
+  
+  }
+
+  #fixnav li ul{
+    display:none;
+  }
+
+  
+  #logos{
+margin-top: 5px;
+margin-left: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  #fixnav span{
+  
+    display: block;
+  margin-top: 40px;
+      padding:0 38px;	
+      padding-top: 0px;
+      padding-bottom: 10px;
+     background-color:rgba(256,256,256,0.3);
+      font-size:1.06rem;
+   height: 60px;
+      text-decoration:none;
+     border-radius: 5%;
+     font-family:  Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;;
+    font-weight: 530;
+    }
+
+  #fixnav span{
+      padding-top: 18px;
+  }
+    #fixnav span:hover{
+        cursor: pointer;
+    border-bottom: cornflowerblue 2px solid;
+    }
+    #yingyangcontainer{
+      display: none;
+    }
+    #masthead-subheading1{
+      display: none;
+    }
+    #masthead-heading1{
+      display: none;
+    }
+    #masthead-subheading2{
+      display: none;
+    }
+    #masthead-heading2{
+      display: none;
+    }
+    #masthead-subheading3{
+      display: none;
+    }
+    #masthead-heading3{
+      display: none;
+    }
+    #masthead-subheading4{
+      display: none;
+    }
+    #masthead-heading4{
+      display: none;
+    }
+    #yingyang{
+    
+     margin-top: -270px;
+     margin-left: 50px;
+    }
+    #yingyang1{
+     
+      margin-top: -200px;
+      margin-left: 850px;
+     }
+    #cir{
+    
+     
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      padding-left: 50px;
+      background-image: linear-gradient(to 
+        left, #fff, #fff 50%, #000 50%, #000);
+      animation: roll 10s linear infinite;
+    }
+    
+    #he {
+      position: relative;
+      background: #fff;
+      height: 100px;
+      width: 100px; 
+      border-radius: 50%;
+      background-image: linear-gradient(
+        to left, #fff, #fff 50%, #000 50%, #000);
+      animation: roll 4s linear infinite;
+      animation-direction: reverse;
+    } 
+    
+    #he:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translatex(-50%);
+      background: #fff;
+      border: 18px solid #000;
+      border-radius: 50%;
+        width: 50px;
+        height: 50px;
+     }
+    #he:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translatex(-50%);
+      background: #000;
+      border: 18px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+    
+    
+    @keyframes roll{
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(-360deg);
+      }
+    }
+    
+    
+    
+    #wra {
+      position: relative;
+      padding-top: 0px;
+      margin-left: 0px;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow:
+          0 1px 1px hsl(0deg 0% 0% / 0.075),
+          0 2px 2px hsl(0deg 0% 0% / 0.075),
+          0 4px 4px hsl(0deg 0% 0% / 0.075),
+          0 8px 8px hsl(0deg 0% 0% / 0.075),
+          0 16px 16px hsl(0deg 0% 0% / 0.075)
+        ;
+    }
+    img.logosbig{
+      width: 30px;
+      height: 30px;
+      border: none;
+    }
